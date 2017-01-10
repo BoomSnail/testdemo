@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="24dp">
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:matProg_barColor="?attr/colorAccent"
+        app:matProg_progressIndeterminate="true"
+        app:matProg_barWidth="4dp"/>
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="16sp"
+        tools:text="这里是文字" />
+
+</LinearLayout>

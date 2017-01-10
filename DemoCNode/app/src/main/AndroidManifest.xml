@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiaoshihua.thinkpad.democnode">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeLight">
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeLight.FitsStatusBar" />
+        <activity android:name=".ui.activities.CrashLogActivity" />
+        <activity android:name=".ui.activities.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activities.AboutActivity" />
+        <activity android:name=".ui.activities.LicenseActivity" />
+        <activity android:name=".ui.activities.SettingActivity" />
+        <activity android:name=".ui.activities.ModifyTopicSignActivity" />
+        <activity android:name=".ui.activities.NotifycationActivity" />
+        <activity android:name=".ui.activities.UserDetailActivity" />
+        <activity android:name=".ui.activities.NotificationCompatActivity" />
+        <activity android:name=".ui.activities.TopicActivity" />
+        <activity android:name=".ui.activities.TopicCompatActvity" />
+        <activity android:name=".ui.activities.LoginActivity" />
+        <activity android:name=".ui.activities.QRCodeActivity" />
+        <activity android:name=".ui.activities.CreateTopicActivity" />
+        <activity android:name=".ui.activities.ImagePreviewActivity"></activity>
+    </application>
+
+</manifest>
